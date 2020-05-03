@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Alfonso Vega Garza</title>
+  <link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-8">
+			<div class="panel">
+				<div class="panel-heading">Favor de ingresar tus datos:</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+							  <label for="texture">Textura:</label>
+							  <input type="number" class="form-control" id="texture" value="0">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+							  <label for="area">Area:</label>
+							  <input type="number" class="form-control" id="area" value="0">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+							  <label for="compactness">Compacidad:</label>
+							  <input type="number" class="form-control" id="compactness" value="0">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+							  <label for="concabity">Concavidad:</label>
+							  <input type="number" class="form-control" id="concabity" value="0">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+							  <label for="symmetry">Simetría:</label>
+							  <input type="number" class="form-control" id="symmetry" value="0">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+							  <label for="frac">Dimensión fractal:</label>
+							  <input type="number" class="form-control" id="frac" value="0">
+							</div>
+						</div>
+					</div>
+					<div id="moreVariables">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+							  <label for="radius">Radio:</label>
+							  <input type="number" class="form-control" id="radius" value="0">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+							  <label for="perimeter">Perimetro:</label>
+							  <input type="number" class="form-control" id="perimeter" value="0">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+							  <label for="smoothness">Suavidad:</label>
+							  <input type="number" class="form-control" id="smoothness" value="0">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group">
+							  <label for="concavePoints">Puntos Concavos:</label>
+							  <input type="number" class="form-control" id="concavePoints" value="0">
+							</div>
+						</div>
+					</div>
+					</div>
+					<div class="float-right">
+						<button class="btn btn-primary btn-lg" onclick="analise()">Analizar</button>&nbsp;&nbsp;
+						<button class="btn btn-success btn-lg" onclick="toggleExtra()">Precision</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="panel">
+				<div class="panel-heading">Diagnostico:</div>
+				<div class="panel-body">
+					<div id="result"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="panel">
+				<div class="panel-heading">Nota importante:</div>
+				<div class="panel-body">
+					Este diagnostico se basa en un modelo predictivo calculado a partir de 570 pacientes con tumores posiblemente relacionados con el cancer de mama<br>
+					De ninguna forma sustituye la validación de un médico<br>
+					Realizado por Alfonso Vega Garza
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="assets/jquery/jquery-3.4.1.min.js"></script>
+<script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script  src="js/index.js"></script>
+</html>

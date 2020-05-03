@@ -1,0 +1,32 @@
+
+body {
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+	background-color: #dfe6e9;
+}
+
+.panel-heading {
+	background-color: :#b2bec3 !important;
+	font-size: 20px;
+}
+
+#good{
+	font-size:30px;
+	text-align: center;
+}
+
+#good span {
+	font-size:60px;
+	color:green;
+}
+
+#bad{
+	font-size:30px;
+	text-align: center;
+}
+
+#bad span {
+	font-size:60px;
+	color:red;
+}
